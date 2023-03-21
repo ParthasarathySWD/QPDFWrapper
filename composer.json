@@ -1,0 +1,32 @@
+{
+    "name": "parthasarathy/QPDFWrapper",
+    "description": "A PHP wrapper for the qpdf command-line utility.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Parthasarathy",
+            "email": "parthasarathyswd@gmail.com"
+        }
+    ],
+    "require": {
+        "mikehaertl/php-shellcommand": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "QPDFWrapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "QPDFWrapper\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit tests/"
+        ]
+    }
+}
